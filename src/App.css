@@ -1,99 +1,271 @@
-body{font-family: "Montserrat", serif; background: #f1f1f1;}
-.MuiBadge-badge {background: #ff5252 !important;}
+body {
+  font-family: var(--font-family);
+  background: var(--color-gray-100);
+}
+
+.MuiBadge-badge {
+  background: var(--color-accent) !important;
+}
 
 .ReactCollapse--collapse {
-    transition: height 300ms;
-  }
-
-  ::-webkit-scrollbar{width: 10px !important; height: 10px !important;}
-  ::-webkit-scrollbar-thumb{background: #ccc !important;}
-
-  table td{padding: 8px 17px !important; font-size: 13px !important;}
-
-  .btn{ padding: 8px 20px !important;}
-  .btn svg{font-size: 20px;}
-  .btn-blue{background: #3872fa !important; color: #fff !important; padding: 8px 20px !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);}
-  .btn-blue:hover{background: #3067e5 !important;}
-  .btn-sm{padding: 6px 20px !important; font-size: 13px !important;}
-  .btn-lg{padding: 8px 20px !important; font-size: 16px !important;}
-
-  th.MuiTableCell-root{@apply bg-[#f1f1f1] py-1}
-
-  a.active button{background: #e8e8e8 !important;}
-
-  .MuiButton-icon svg{font-size: 27px !important;}
-
-  .css-rizt0-MuiTypography-root{font-size: 14px !important;}
-
-  .MuiAppBar-colorPrimary{background: #e6e6e6 !important;}
-
-
-  input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
+  transition: height var(--transition-normal);
 }
 
-.MuiSelect-select{background: #fff !important;}
-
-.MuiDialog-paper{background: #f9fafb !important;}
-
-
-.otpBox input{border: 1px solid rgba(0,0,0,0.3) !important; outline: none !important;
-  border-radius: 4px;}
-  .otpBox input:focus{border: 1px solid rgba(0,0,0,0.7) !important;}
-  
-  .otpPage .container{height:90vh; display: flex;}
-
-
-  .MuiTableBody-root tr:nth-child(even){@apply bg-gray-50}
-
-  button .MuiCircularProgress-root{width: 30px !important; height: 30px !important;}
-
-  button.btn-sml span.MuiCircularProgress-root{width: 20px !important; height: 20px !important;}
-
-  input[type="text"]:disabled ,input[type="email"]:disabled {
-    pointer-events: none;
-    background: #f1f1f1 !important;
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
 }
 
-.react-international-phone-input{width: 100% !important;}
-.react-international-phone-country-selector-button{width: 55px !important;}
-.react-international-phone-input-container{border: 1px solid rgba(0,0,0,0.1) !important;}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-300) !important;
+}
 
-.Mui-focused fieldset legend{display: none !important;}
+table td {
+  padding: 8px 17px !important;
+  font-size: var(--font-size-sm) !important;
+}
 
+.btn {
+  padding: 8px 20px !important;
+}
 
-.zoomProductSliderThumbs.space .swiper-wrapper{padding-top: 38px !important;}
-.zoomProductSliderThumbs  .swiper-slide{height: 80px !important; overflow: hidden; border-radius: 5px;}
-.zoomProductSliderThumbs .swiper-button-next{bottom: 0px !important; right: inherit !important; top: inherit !important; width: 100% !important; height: 30px !important; border-radius: 0px !important;}
+.btn svg {
+  font-size: 20px;
+}
 
-.zoomProductSliderThumbs .swiper-button-next:after{transform: rotate(90deg);}
+.btn-blue {
+  background: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  padding: 8px 20px !important;
+  box-shadow: var(--shadow-sm);
+}
 
-.zoomProductSliderThumbs .swiper-button-prev{top: 20px !important; left:0 !important;  width: 100% !important; height: 30px !important; border-radius: 0px !important;}
+.btn-blue:hover {
+  background: var(--color-primary-dark) !important;
+}
 
-.zoomProductSliderThumbs .swiper-button-prev:after{transform: rotate(90deg);}
+.btn-sm {
+  padding: 6px 20px !important;
+  font-size: var(--font-size-sm) !important;
+}
 
-.swiper-slide .iiz{height: 400px !important; overflow: hidden !important;}
+.btn-lg {
+  padding: 8px 20px !important;
+  font-size: var(--font-size-base) !important;
+}
 
+th.MuiTableCell-root {
+  @apply bg-[#f1f1f1] py-1;
+}
 
-.swiper-button-prev,.swiper-button-next{display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 100%; width: 45px; height: 45px; min-width: 45px;
-  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important; transition:all 0.2s;}
+a.active button {
+  background: var(--color-gray-200) !important;
+}
 
-.swiper-button-prev:after,.swiper-button-next:after{font-size: 22px !important; color: #000;}
+.MuiButton-icon svg {
+  font-size: 27px !important;
+}
 
+.css-rizt0-MuiTypography-root {
+  font-size: var(--font-size-sm) !important;
+}
 
-.smlBtn .swiper-button-prev,.smlBtn .swiper-button-next{width: 30px !important; height: 30px !important; min-width: 30px !important; top: 55% !important;}
-.smlBtn  .swiper-button-prev:after,.smlBtn  .swiper-button-next:after{font-size: 18px !important; color: #000;}
+.MuiAppBar-colorPrimary {
+  background: var(--color-gray-200) !important;
+}
 
-.contentRight{padding-top: 75px !important;}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
 
-.rsw-editor{min-height: 200px !important; background: #fff !important;}
+.MuiSelect-select {
+  background: var(--color-white) !important;
+}
 
-.sidebar ul{padding-right: 5px;}
-.sidebar ul::-webkit-scrollbar{width: 5px !important;}
+.MuiDialog-paper {
+  background: var(--color-gray-50) !important;
+}
 
-.contentRight {padding-left: 20px !important;}
-.uploadBox  h4{text-align: center;}
+.otpBox input {
+  border: 1px solid var(--color-gray-300) !important;
+  outline: none !important;
+  border-radius: var(--radius-md);
+}
+
+.otpBox input:focus {
+  border: 1px solid var(--color-gray-700) !important;
+}
+
+.otpPage .container {
+  height: 90vh;
+  display: flex;
+}
+
+.MuiTableBody-root tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+button .MuiCircularProgress-root {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+button.btn-sml span.MuiCircularProgress-root {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+input[type="text"]:disabled,
+input[type="email"]:disabled {
+  pointer-events: none;
+  background: var(--color-gray-100) !important;
+}
+
+.react-international-phone-input {
+  width: 100% !important;
+}
+
+.react-international-phone-country-selector-button {
+  width: 55px !important;
+}
+
+.react-international-phone-input-container {
+  border: 1px solid var(--color-gray-200) !important;
+}
+
+.Mui-focused fieldset legend {
+  display: none !important;
+}
+
+.zoomProductSliderThumbs.space .swiper-wrapper {
+  padding-top: 38px !important;
+}
+
+.zoomProductSliderThumbs .swiper-slide {
+  height: 80px !important;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.zoomProductSliderThumbs .swiper-button-next {
+  bottom: 0px !important;
+  right: inherit !important;
+  top: inherit !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next:after {
+  transform: rotate(90deg);
+}
+
+.zoomProductSliderThumbs .swiper-button-prev {
+  top: 20px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-prev:after {
+  transform: rotate(90deg);
+}
+
+.swiper-slide .iiz {
+  height: 400px !important;
+  overflow: hidden !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: var(--shadow-md) !important;
+  transition: all var(--transition-fast);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 22px !important;
+  color: var(--color-black);
+}
+
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55% !important;
+}
+
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
+  font-size: 18px !important;
+  color: var(--color-black);
+}
+
+.contentRight {
+  padding-top: 75px !important;
+}
+
+.rsw-editor {
+  min-height: 200px !important;
+  background: var(--color-white) !important;
+}
+
+.sidebar ul {
+  padding-right: 5px;
+}
+
+.sidebar ul::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.contentRight {
+  padding-left: 20px !important;
+}
+
+.uploadBox h4 {
+  text-align: center;
+}
+
+/* Login page styles */
+.login-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100px;
+}
+
+.login-divider span {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-primary, #3b82f6);
+}
+
+.loginBox {
+  transition: all 0.3s ease;
+}
+
+.loginBox:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.loginBox input:focus {
+  border-color: var(--color-primary, #3b82f6) !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
